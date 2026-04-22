@@ -1,0 +1,21 @@
+[build]
+  # The directory that contains the package.json and other build files
+  # Since your files are in the root of the repo, we leave this as /
+  base = ""
+
+  # The command to run to build your site
+  command = "npm run build"
+
+  # The directory that contains the output of the build command
+  publish = "dist"
+
+[dev]
+  # Command to start the development server
+  command = "npm run dev"
+  port = 5173
+
+[[redirects]]
+  # Basic redirect for Single Page Apps (Vite)
+  from = "/*"
+  to = "/index.html"
+  status = 200
